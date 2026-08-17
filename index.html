@@ -77,7 +77,6 @@ body{
 }
 .tg-btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(42,171,238,.4)}
 .tg-btn svg{width:17px;height:17px}
-/* ===== Bouton installer l'application ===== */
 .install-side{margin-top:10px;width:100%;padding:12px;border-radius:11px;border:1px solid rgba(245,185,66,.5);background:linear-gradient(135deg,rgba(245,185,66,.18),rgba(245,185,66,.08));color:var(--gold);font-family:inherit;font-weight:800;font-size:13px;letter-spacing:.4px;cursor:pointer;transition:.18s}
 .install-side:hover{background:rgba(245,185,66,.25)}
 .install-mini{display:inline-flex;align-items:center;gap:8px;padding:9px 15px;border-radius:10px;background:rgba(245,185,66,.12);border:1px solid rgba(245,185,66,.45);color:var(--gold);font-weight:800;font-size:12px;cursor:pointer;font-family:inherit;transition:.18s}
@@ -108,7 +107,6 @@ body{
 .view.active{display:block;animation:fadeUp .32s ease}
 @keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 
-/* ============ CARDS / KPI ============ */
 .grid-kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:14px;margin-bottom:20px}
 .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:var(--r);padding:18px}
 .kpi{position:relative;overflow:hidden}
@@ -130,7 +128,6 @@ body{
 @media(max-width:1100px){.two-col{grid-template-columns:1fr}}
 @media(max-width:900px){.three-col{grid-template-columns:1fr}}
 
-/* ============ TABLES ============ */
 .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:rgba(10,17,32,.5)}
 table.tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
 .tbl th{font-size:10px;font-weight:800;letter-spacing:1.3px;text-transform:uppercase;color:var(--dim);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);background:rgba(14,22,38,.9);white-space:nowrap}
@@ -155,7 +152,6 @@ table.tbl{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
 .b-sell{background:rgba(244,63,94,.09);color:var(--red2);border:1px solid rgba(244,63,94,.3);font-family:var(--mono);font-weight:700}
 .pair-tag{font-family:var(--mono);font-weight:600;font-size:12.5px;color:#dbe7f8;background:#152238;border:1px solid var(--line2);padding:4px 9px;border-radius:8px}
 
-/* ============ BUTTONS / FORMS ============ */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:10px;border:1px solid transparent;cursor:pointer;font-family:inherit;font-weight:700;font-size:13px;letter-spacing:.3px;transition:.18s;text-decoration:none}
 .btn svg{width:15px;height:15px}
 .btn-p{background:linear-gradient(135deg,#12c48b,#059669);color:#041209;box-shadow:0 5px 18px rgba(16,185,129,.3)}
@@ -185,7 +181,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 .form-row{display:grid;grid-template-columns:130px 1fr 160px auto;gap:12px;align-items:end}
 @media(max-width:900px){.form-row{grid-template-columns:1fr 1fr}.form-row .field.pair{grid-column:1/-1}}
 
-/* ============ EMPTY / MISC ============ */
 .empty{padding:40px 18px;text-align:center;color:var(--dim);border:1.5px dashed var(--line2);border-radius:12px;font-size:13px}
 .empty svg{width:34px;height:34px;opacity:.45;margin-bottom:10px}
 .empty b{display:block;color:var(--mut);font-size:13.5px;margin-bottom:3px}
@@ -213,7 +208,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 .warn-note{background:rgba(244,63,94,.07);border-color:rgba(244,63,94,.3);color:#eec3cd}
 .warn-note svg{color:var(--red2)}
 
-/* ============ CALENDAR ============ */
 .cal-head{display:flex;align-items:center;gap:14px;margin-bottom:16px}
 .cal-head h3{font-size:17px;font-weight:800;text-transform:capitalize;min-width:190px;text-align:center}
 .nav-ic{width:36px;height:36px;border-radius:10px;border:1px solid var(--line2);background:#0f1a2c;color:var(--mut);cursor:pointer;font-size:16px;transition:.15s}
@@ -233,7 +227,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 .cal-legend span{display:inline-flex;align-items:center;gap:7px}
 .cal-legend i{width:11px;height:11px;border-radius:4px}
 
-/* ============ FAQ ============ */
 .faq{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#0d1626;margin-bottom:10px}
 .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px 18px;background:transparent;border:none;color:var(--txt);font-family:inherit;font-weight:700;font-size:13.5px;cursor:pointer;text-align:left}
 .faq-q svg{width:16px;height:16px;flex:none;color:var(--grn2);transition:transform .25s}
@@ -242,7 +235,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 .faq.open .faq-a{max-height:260px}
 .faq-a p{padding:0 18px 16px;font-size:13px;color:var(--mut);line-height:1.65}
 
-/* ============ MODAL / TOAST ============ */
 .overlay{position:fixed;inset:0;background:rgba(3,7,14,.75);backdrop-filter:blur(5px);display:flex;align-items:center;justify-content:center;z-index:200;opacity:0;pointer-events:none;transition:opacity .2s}
 .overlay.open{opacity:1;pointer-events:auto}
 .modal{width:min(430px,92vw);background:#0f1828;border:1px solid var(--line2);border-radius:16px;padding:26px;transform:translateY(14px) scale(.97);transition:transform .25s;box-shadow:0 30px 80px rgba(0,0,0,.55)}
@@ -261,7 +253,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 .lock-ico{width:52px;height:52px;border-radius:14px;background:rgba(245,185,66,.12);border:1px solid rgba(245,185,66,.4);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
 .lock-ico svg{width:24px;height:24px;color:var(--gold)}
 
-/* ============ RESPONSIVE ============ */
 @media(max-width:980px){
   body{flex-direction:column}
   .sidebar{position:static;width:100%;inset:auto;flex-direction:column;padding:14px;border-right:none;border-bottom:1px solid var(--line)}
@@ -279,7 +270,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 </head>
 <body>
 
-<!-- ================= SIDEBAR ================= -->
 <aside class="sidebar">
   <div>
     <div class="brand">
@@ -297,7 +287,7 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
     <button class="nav-item" data-view="calendar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M8 2v4M16 2v4M3 9h18"/></svg>Calendrier</button>
     <button class="nav-item" data-view="mises"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><path d="M16 3H6a2 2 0 0 0-2 2v2"/><circle cx="16" cy="14" r="1.6" fill="currentColor"/></svg>Gestion de Mises</button>
     <button class="nav-item" data-view="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3h.1a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5h.1a1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9v.1a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Paramètres</button>
-    <button class="nav-item" data-view="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Aide &amp; Support</button>
+    <button class="nav-item" data-view="help"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>Aide & Support</button>
   </nav>
 
   <div class="side-tg">
@@ -307,7 +297,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
   </div>
 </aside>
 
-<!-- ================= MAIN ================= -->
 <div class="main">
   <header class="topbar">
     <div class="tt">
@@ -320,8 +309,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
   </header>
 
   <main class="content">
-
-    <!-- ===== DASHBOARD ===== -->
     <section class="view active" id="view-dashboard">
       <div class="grid-kpi">
         <div class="card kpi" style="--tint:rgba(56,189,248,.16)">
@@ -372,7 +359,7 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       <div class="two-col">
         <div class="card">
           <div class="panel-head">
-            <div><h3>📈 Performance Globale</h3><div class="sub">Win rate &amp; profit par jour</div></div>
+            <div><h3>📈 Performance Globale</h3><div class="sub">Win rate & profit par jour</div></div>
             <div class="seg" id="perfPeriod">
               <button data-days="7" class="on">7 jours</button>
               <button data-days="14">14 jours</button>
@@ -419,7 +406,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== LIVE ===== -->
     <section class="view" id="view-live">
       <div class="card">
         <div class="panel-head">
@@ -434,7 +420,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== HISTORY ===== -->
     <section class="view" id="view-history">
       <div class="card">
         <div class="panel-head">
@@ -453,7 +438,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== STATS ===== -->
     <section class="view" id="view-stats">
       <div class="grid-kpi">
         <div class="card kpi" style="--tint:rgba(56,189,248,.16)"><div class="lbl">Signaux au total</div><div class="val" id="stTotal">0</div><div class="sub" id="stTotalSub">0 validés</div></div>
@@ -474,7 +458,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== CALENDAR ===== -->
     <section class="view" id="view-calendar">
       <div class="card">
         <div class="cal-head">
@@ -492,7 +475,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== MISES ===== -->
     <section class="view" id="view-mises">
       <div class="grid-kpi">
         <div class="card kpi" style="--tint:rgba(56,189,248,.16)"><div class="lbl">Mise totale</div><div class="val" id="mStake">0,00 €</div><div class="sub">Cumul de toutes les mises</div></div>
@@ -512,9 +494,7 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== ADMIN ===== -->
     <section class="view" id="view-admin">
-      <!-- Gate -->
       <div class="card" id="adminGate" style="max-width:460px;margin:30px auto;text-align:center">
         <div class="lock-ico" style="margin:0 auto 16px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
         <h3 style="font-size:17px;font-weight:800">Accès réservé</h3>
@@ -527,7 +507,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
         <p style="font-size:10px;color:var(--dim);margin-top:16px">🔒 Vérification par empreinte SHA-256 salée — aucun code en clair dans la source.</p>
       </div>
 
-      <!-- Panel -->
       <div id="adminPanel" style="display:none">
         <div class="card" style="margin-bottom:16px">
           <div class="panel-head">
@@ -563,7 +542,6 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
       </div>
     </section>
 
-    <!-- ===== HELP ===== -->
     <section class="view" id="view-help">
       <div class="card warn-note info-note" style="margin-bottom:16px">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>
@@ -583,11 +561,9 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
         <button class="btn btn-p js-telegram" style="margin:0 auto"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6 18.9 19c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7L18.4 6c.4-.3-.1-.5-.6-.2L7.3 12.4l-4.5-1.4c-1-.3-1-1 .2-1.4L20.6 3.2c.8-.3 1.5.2 1.3 1.4z"/></svg>Rejoindre le Canal Telegram</button>
       </div>
     </section>
-
   </main>
 </div>
 
-<!-- ===== MODAL MISE ===== -->
 <div class="overlay" id="stakeOverlay">
   <div class="modal">
     <h4 id="mStakeTitle">Valider le signal</h4>
@@ -610,14 +586,7 @@ select.inp{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns
 <div id="toasts"></div>
 
 <script>
-/* =========================================================
-   CLOVER HOLDING — Application signaux
-   ========================================================= */
-
-/* --- Lien Telegram : renseignez votre lien ici --- */
-const TELEGRAM_URL = ""; // ex : "https://t.me/votre_canal"
-
-/* --- Sécurité admin --- */
+const TELEGRAM_URL = "";
 const ADMIN_HASH = "3ec3b15e6e6e4e95b0ece2ef099741e297cc5b074f5537dc5a21d3858c683fa3";
 const SALT = "CLOVER::";
 
@@ -625,9 +594,11 @@ function sha256hex(msg){
   const K=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
   0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
   0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
-  0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x41292967,
-  0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x682e6ff3,0x748f82ee,0x78a5636f,0x84c87814,
-  0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+  0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+  0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+  0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+  0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+  0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
   const rr=(v,a)=>(v>>>a)|(v<<(32-a));
   msg=unescape(encodeURIComponent(msg));
   const bitLen=msg.length*8, padded=[];
@@ -657,7 +628,6 @@ function sha256hex(msg){
   return H.map(x=>(x>>>0).toString(16).padStart(8,"0")).join("");
 }
 
-/* --- Constantes métier --- */
 const PAIRS=[
  ["EUR/USD","EUR/USD"],["GBP/USD","GBP/USD"],["USD/JPY","USD/JPY"],["USD/CHF","USD/CHF"],
  ["AUD/USD","AUD/USD"],["NZD/USD","NZD/USD"],["USD/CAD","USD/CAD"],["EUR/GBP","EUR/GBP"],
@@ -670,14 +640,12 @@ const PAIRS=[
 ];
 const DAILY_TARGET=15, PAYOUT=0.92, LS_KEY="clover_signals_v2";
 
-/* --- État --- */
 let signals=[];
 try{ signals=JSON.parse(localStorage.getItem(LS_KEY)||"[]"); }catch(err){ signals=[]; }
 let currentView="dashboard", perfDays=7, statsDays=7, histMode="all";
 const now0=new Date(); let calY=now0.getFullYear(), calM=now0.getMonth();
 let chartDash=null, chartStats=null, stakeAction=null;
 
-/* --- Helpers --- */
 const $=id=>document.getElementById(id);
 const pad=n=>String(n).padStart(2,"0");
 const round2=v=>Math.round(v*100)/100;
@@ -698,7 +666,6 @@ function toast(msg,type="ok"){
   setTimeout(()=>{t.style.opacity="0";t.style.transition="opacity .4s";setTimeout(()=>t.remove(),400);},3400);
 }
 
-/* --- Agrégats --- */
 function aggregates(){
   const byDay={};
   for(const s of signals){
@@ -736,7 +703,6 @@ function mostTraded(){
 }
 const chronoDesc=(a,b)=>(b.date+b.time).localeCompare(a.date+a.time);
 
-/* --- Composants HTML --- */
 function statusBadge(s){
   if(s.status==="win")return '<span class="badge b-win"><span class="bdot"></span>Gagnant ✅</span>';
   if(s.status==="loss")return '<span class="badge b-loss"><span class="bdot"></span>Perdant ❌</span>';
@@ -753,7 +719,6 @@ function emptyRow(colspan,title,txt){
   return '<tr><td colspan="'+colspan+'"><div class="empty" style="border:none"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 12h-6l-2 3h-4l-2-3H2"/><path d="M5.5 5.1 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.5-6.9A2 2 0 0 0 16.7 4H7.3a2 2 0 0 0-1.8 1.1z"/></svg><b>'+title+'</b>'+txt+'</div></td></tr>';
 }
 
-/* ================= RENDUS ================= */
 function renderDash(){
   const g=globalStats(), tk=todayKey(), byDay=aggregates();
   const t=byDay[tk]||{n:0,wins:0,losses:0,pend:0,stake:0,net:0};
@@ -897,7 +862,6 @@ function renderAdmin(){
     : emptyRow(7,"Aucun signal aujourd'hui","Ajoutez le premier signal du jour avec le formulaire ci-dessus.");
 }
 
-/* ================= GRAPHIQUES ================= */
 function seriesData(days){
   const byDay=aggregates(), labels=[], profits=[], rates=[];
   const today=new Date();
@@ -945,7 +909,6 @@ function renderAll(){
   renderChartFor(currentView);
 }
 
-/* ================= NAVIGATION ================= */
 const TITLES={
   dashboard:["Tableau de bord","Signaux en temps réel — Prédictions par Fridaous AMOUSSA"],
   live:["Signaux en Direct","Tous les signaux publiés aujourd'hui"],
@@ -977,7 +940,6 @@ document.addEventListener("click",e=>{
   if(g)switchView(g.dataset.goto);
 });
 
-/* ================= ACTIONS SIGNAUX ================= */
 document.addEventListener("click",e=>{
   const b=e.target.closest("[data-act]");
   if(!b)return;
@@ -993,7 +955,6 @@ document.addEventListener("click",e=>{
   }
 });
 
-/* --- Modal de mise --- */
 function openStakeModal(id,status){
   const s=signals.find(x=>x.id===id); if(!s)return;
   stakeAction={id,status};
@@ -1027,7 +988,6 @@ $("mStakeOk").addEventListener("click",()=>{
 });
 $("mStakeInput").addEventListener("keydown",e=>{if(e.key==="Enter"){e.preventDefault();$("mStakeOk").click();}});
 
-/* ================= ADMIN : formulaire ================= */
 function fillPairSelect(){
   $("sigPair").innerHTML=PAIRS.map(p=>'<option value="'+p[0]+'">'+p[1]+'</option>').join("");
 }
@@ -1044,7 +1004,6 @@ $("sigForm").addEventListener("submit",e=>{
   toast("Signal ajouté : "+pair+" "+dir,"ok");
 });
 
-/* ================= ADMIN : accès ================= */
 $("adminForm").addEventListener("submit",e=>{
   e.preventDefault();
   const val=$("adminCode").value;
@@ -1063,7 +1022,6 @@ $("btnLock").addEventListener("click",()=>{
   renderAdmin(); toast("Session administrateur verrouillée","info");
 });
 
-/* ================= PÉRIODES / FILTRES ================= */
 $("perfPeriod").addEventListener("click",e=>{
   const b=e.target.closest("button"); if(!b)return;
   perfDays=+b.dataset.days;
@@ -1083,11 +1041,9 @@ $("histFilter").addEventListener("click",e=>{
   renderHistory();
 });
 
-/* ================= CALENDRIER ================= */
 $("calPrev").addEventListener("click",()=>{calM--;if(calM<0){calM=11;calY--;}renderCalendar();});
 $("calNext").addEventListener("click",()=>{calM++;if(calM>11){calM=0;calY++;}renderCalendar();});
 
-/* ================= CSV ================= */
 $("btnCSV").addEventListener("click",()=>{
   const byDay=aggregates(), days=Object.keys(byDay).sort().reverse();
   if(!days.length){toast("Aucune donnée à exporter","warn");return;}
@@ -1105,7 +1061,6 @@ $("btnCSV").addEventListener("click",()=>{
   toast("Export CSV téléchargé 📥","ok");
 });
 
-/* ================= TELEGRAM / FAQ ================= */
 document.querySelectorAll(".js-telegram").forEach(b=>b.addEventListener("click",e=>{
   e.preventDefault();
   if(TELEGRAM_URL)window.open(TELEGRAM_URL,"_blank");
@@ -1113,7 +1068,6 @@ document.querySelectorAll(".js-telegram").forEach(b=>b.addEventListener("click",
 }));
 document.querySelectorAll(".faq-q").forEach(q=>q.addEventListener("click",()=>q.parentElement.classList.toggle("open")));
 
-/* ================= HORLOGE ================= */
 function tick(){
   const d=new Date();
   $("clock").textContent=d.toLocaleTimeString("fr-FR");
@@ -1121,7 +1075,6 @@ function tick(){
 }
 setInterval(tick,1000); tick();
 
-/* ================= PWA : INSTALLATION SUR MOBILE ================= */
 if("serviceWorker" in navigator){
   window.addEventListener("load",()=>{ navigator.serviceWorker.register("sw.js").catch(()=>{}); });
 }
@@ -1145,7 +1098,6 @@ installBtns.forEach(b=>b.addEventListener("click",async()=>{
   }
 }));
 
-/* ================= INIT ================= */
 if(window.Chart){
   Chart.defaults.font.family="'JetBrains Mono','Inter',monospace";
   Chart.defaults.font.size=11;
